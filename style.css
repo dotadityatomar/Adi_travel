@@ -13,9 +13,13 @@ a{
     text-decoration: none;
     color: #f2f2f2;
 }
+a:hover{
+    color:aquamarine;
+}
 .list:hover{
     font-size: 30px;
     cursor: pointer;
+    color:aquamarine;
     
 }
 
@@ -30,24 +34,27 @@ a{
     display: flex;
     list-style-type: none;
     color:white;
-    margin-top: 15px;
+    margin-top: 14px;
     position: fixed;
     
 }
 
 .logo{
     position: relative;
-    left: 400px;    
+    left: 400px;  
+    font-size: 40px; 
+    top:-15px ; 
 }
 .main_list{
     position: relative;
     left: 900px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     
 
     & > .list{
         margin-left: 60px;
+        text-shadow: 1px white;
         
         
     }
@@ -68,15 +75,18 @@ a{
         text-align: center;
         & >h1{
          font-size:70px;
+         text-shadow: 2px 2px 5px black;
         } 
         & p{
             font-size: 25px;
+            text-shadow: 2px 2px 5px black;
         }      
     }
         
 }
 .button{
     position: relative;
+    
     top: 40px;
     width: 170px;
     height: 50px;
@@ -135,12 +145,16 @@ a{
         margin-right: auto;
         border-radius: 50%;
         left: 66px;
+        box-shadow: 1px 2px 2px 2px gray;
     }
 }
 .card2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &> li{
+        box-shadow: 2px 4px 8px 8px black;
+    }
 }
 .sec2{
     background-color: #f2f2f2 ;
@@ -178,10 +192,10 @@ a{
     
 
 }
-.Tlist{
+
     
 
-}
+
 
 .mem{
     position: relative;
@@ -253,5 +267,13 @@ a{
     transition:0.2s ease;
     border-radius: 7px;
     margin-top: -20px;
+  }
+  button:hover{
+    color: aquamarine;
+    transform: translateY(0.5px);
+  }
+  
+  button:active{
+    transform: translateY(3px);
   }
   
