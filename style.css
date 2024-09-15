@@ -14,13 +14,16 @@ body{
     background-color: black;
     height: 80px;
     width: 100%;  
-    position: sticky;
+    position: fixed;
+    z-index: 999;
 }
 .header, .main_list, .logo{
     display: flex;
     list-style-type: none;
     color:white;
-    margin-top: 25px;
+    margin-top: 15px;
+    position: fixed;
+    
 }
 
 .logo{
@@ -30,6 +33,8 @@ body{
 .main_list{
     position: relative;
     left: 900px;
+    font-size: 20px;
+    color: white;
     
 
     & > .list{
@@ -239,5 +244,3 @@ body{
     margin-top: -20px;
   }
   
-
-
